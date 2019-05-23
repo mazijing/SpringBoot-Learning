@@ -26,11 +26,16 @@ public class Chapter11ApplicationTests {
         mvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
     }
 
+
+    //2.x--2.1分支第一次提交
+
     @Test
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Hello World")));
     }
+
+
 
 }
