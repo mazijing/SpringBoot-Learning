@@ -11,4 +11,8 @@ public class HelloController {
         return "Hello World";
     }
 
+    public static void main(String[] args) {
+        System.out.println("test1111");
+    }
+
 }
